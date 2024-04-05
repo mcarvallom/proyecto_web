@@ -1,9 +1,14 @@
-body{
-    padding-bottom: 100px;
+.navbar-expand-lg .navbar-nav{
+    align-items: center;
 }
 .carousel-control-prev-icon{
     background-image: url("imagenes/flecha2.png");
 }
 .carousel-control-next-icon{
     background-image: url("imagenes/flecha1.png");
+
+}
+#enlacesBottom{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color:  transparent;
 }
