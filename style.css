@@ -22,3 +22,11 @@
     margin-right: 10px;
     word-spacing:10px;
 }
+.btn-primary{
+    --bs-btn-bg: #00ac67;
+    --bs-btn-border-color: #00ac67;
+    --bs-btn-hover-bg: #00ac67;
+    --bs-btn-hover-border-color: #00ac67;
+    --bs-btn-active-bg: #00ac67;
+    --bs-btn-active-border-color: #00ac67;
+}
