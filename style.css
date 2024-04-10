@@ -30,3 +30,14 @@
     --bs-btn-active-bg: #00ac67;
     --bs-btn-active-border-color: #00ac67;
 }
+
+.precio1{
+    background-color: rgb(189, 236, 255);
+   
+}
+
+#descripcionPrecios{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+

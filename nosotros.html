@@ -58,27 +58,7 @@
   </nav>
   <!--Carrusel-->
 
-  <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img height="20%" src="imagenesCarrusel/carrusel1.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img height="20%" src="imagenesCarrusel/carrusel2.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img height="20%" src="imagenesCarrusel/carrusel3.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
+
   <!---Sobre nosotros-->
   <br></br>
   <h1 style="text-align: center;">Sobre nosotros</h1>
@@ -90,32 +70,50 @@
   <br>
   <h1 style="text-align: center;">Contáctanos</h1>
   <!--Formulario -->
-
   <div class="container">
-        <form class="row g-3">
-
-            <div class="col-8 m-auto" >
-                <label for="inputNombre" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su nombre">
-            </div>
-
-            <div class="col-8 m-auto">
-                <label for="inputemail" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="inputemail" placeholder="Ingrese su email">
-            </div>
-
-            <div class="col-8 m-auto">
-                <label for="inputcomentario" class="form-label">Mensaje:</label>
-                <input type="text" class="form-control" id="inputcomentario"
-                placeholder="Ingrese su mensaje">
-            </div>
-
-            <div class="col-12 m-auto text-center">
-                <button type="submit" class="btn btn-primary"> Enviar 
-                </button>
-            </div>
-        </form>
+    <form class="row g-3">
+  <form class="row g-3 needs-validation was-validated" novalidate="">
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Mark" required="">
+      <div class="valid-feedback">
+        Correcto!
+      </div>
     </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Correo</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Otto" required="">
+      <div class="valid-feedback">
+        Correcto!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Dominio</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required="">
+        <div class="invalid-feedback">
+          Colocar por ejemplo: gmail.com.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">Mensaje</label>
+      <input type="text" class="form-control" id="validationCustom03" required="">
+      <div class="invalid-feedback">
+        Escribe tu mensaje.
+      </div>
+    </div>
+    
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+  </form>
+</div>
+</div>
+
+
+  
     <br>
     <!--Parte baja-->
 
