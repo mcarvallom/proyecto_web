@@ -8,6 +8,9 @@
     background-image: url("imagenes/flecha1.png");
 
 }
+.imagen{
+    float:right;
+}
 #enlacesBottom{
     --bs-list-group-bg: transparent;
     --bs-list-group-border-color:  transparent;
@@ -39,5 +42,6 @@
 #descripcionPrecios{
     margin-left: 25px;
     margin-right: 25px;
+    align-items: center;
 }
 
