@@ -1,12 +1,10 @@
 .navbar-expand-lg .navbar-nav{
     align-items: center;
 }
-.carousel-control-prev-icon{
-    background-image: url("imagenes/flecha2.png");
-}
-.carousel-control-next-icon{
-    background-image: url("imagenes/flecha1.png");
 
+
+.imagen{
+    float:right;
 }
 #enlacesBottom{
     --bs-list-group-bg: transparent;
@@ -15,6 +13,9 @@
 
 .d-flex{
     display: contents;
+}
+.footerWeb{
+    padding-bottom: 30px;
 }
 #perfilCarrito{
     margin-top:0;

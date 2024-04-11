@@ -12,10 +12,42 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="estilosbootstrap.scss">
   <link rel="stylesheet" href="scss/_variables.scss">
+  
 
 </head>
 
 <body>
+  <!-- Script de Bootstrap (requerido) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+<!-- Script para mostrar el modal al cargar la página 
+<script>
+  $(document).ready(function(){
+    $('#Modal').modal('show');
+  });
+</script>
+-->
+<!--Modal-->
+<div class="modal" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Boletín</h5>
+      </div>
+      <div class="modal-body">
+        Subscríbete a nuestro boletín de noticias para mantenerte al tanto de todas nuestras novedades.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Subscribir</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <!-- NavBar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -26,7 +58,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <p class="nav-item" style="width: 10px;"></p>
-        <img class="nav-item" src="logoCamping.png" style="width: 5%;">
+        <img class="nav-item" src="logoCamping.png"href="index.html" style="width: 5%;">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
@@ -48,7 +80,7 @@
       
         <!--Perfil y carrito-->
         <p id="perfilCarrito" class="nav-item" style="text-align: end;">
-        <a href="perfil.html" >
+        <a href="perfil.html">
           <img class="nav-item" src="imagenes/perfil.png"style="width: 10%;">
         </a>
         <img class="nav-item" src="imagenes/carrito.png" style="width: 10%;">
@@ -97,18 +129,17 @@
     <br></br>
     <div class="d-flex">
     <div class="row">
-      <div class="col-4">
+      <div class="col">
         
         
       
         <!--Aqui pondré un carrusel que tenga las Card-->
-        
         <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
           
           <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="card text-center" style="width:18rem;">
+                <div class="card text-center" style="height:25rem;">
                   <img src="imagenes/Marco.jpeg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Marco</h5>
@@ -120,7 +151,7 @@
               </div>
               <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="height: 25rem;">
                   <img src="imagenes/Kony.jpeg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Constanza</h5>
@@ -133,11 +164,11 @@
               </div>
               <div class="carousel-item">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="height: 25rem;">
                   <img src="imagenes/nikole.avif" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Nikole</h5>
-                    <p class="card-text">Nos encantó! El lugar es super amplio y tranquilo y las opciones que ofrecen son variadas.
+                    <p class="card-text">¡Nos encantó! El lugar es super amplio y tranquilo y las opciones que ofrecen son variadas.
                       Nos encantó la idea de que tengan una tienda para así preocuparnos solo de la comida y de disfrutar.</p>
                   </div>
                 </div>
@@ -152,12 +183,12 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Siguiente</span>
             </button>
-          </div>
-        
+        </div>
       </div>
-    
-      <div class="col-6">
+      <div class="col-sm">
+        <br>
         <img src="imagenes/camping1.webp" style="width: 100%">
+        </br>
       </div>
     </div>
   </div>
@@ -170,13 +201,13 @@
   <br></br>
   <p style="text-align: center;">Ven Con tu mascota. En Camping somos PetFriendly</p>
   <br></br>
-  <p style="text-align: center;"><img src="imagenes/Petfriendly camping.jpeg"  height="400px"></p>
+  <p style="text-align: center;"><img src="imagenes/Petfriendly camping.jpeg"  width="60%"></p>
   <br style="height: 50px;"></br>
 </div>
-<!--Parte baja-->
+<!--Footer-->
   <div class="container text-center" style="background-color: rgba(206, 206, 206, 0.623); max-width: 100%;">
     
-    <div class="row d-flex p-2">
+    <div class="footerWeb row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-md-5 g-3">
       <div class="col">
         <br></br>
         <img src="logoCamping.png" style="width: 40%;">
@@ -184,21 +215,26 @@
       <div class="col">
         <br></br>
         <h4>Enlaces</h4>
-        <ul id="enlacesBottom" class="list-group">
-          <li class="list-group-item ">Inicio</li>
-          <li class="list-group-item">Sobre nosotros</li>
-          <li class="list-group-item">Precios</li>
-          <li class="list-group-item">Tienda</li>
-          <li class="list-group-item">Mi perfil</li>
-        </ul>
+        <ol id="enlacesBottom" class="list-group">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          
+          <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+          <a class="nav-link" href="precios.html">Precios</a>
+          <a class="nav-link" href="tienda.html">Tienda</a>
+          <a class="nav-link" href="perfil.html"> Mi perfil </a>
+        </ol>
       </div>
       <div class="col">
          <br></br>
          <h4>Redes sociales</h4>
+         <img src="imagenes/redesSociales.png" width="30%" />
       </div>
       <div class="col">
         <br></br>
         <h4>Contacto</h4>
+        <br>
+        <p>Contáctanos al correo example@dominio.com</p>
+      </br>
       </div>
       <div class="col">
       <br></br>
