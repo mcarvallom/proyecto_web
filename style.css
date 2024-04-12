@@ -1,10 +1,12 @@
 .navbar-expand-lg .navbar-nav{
     align-items: center;
 }
+.carousel-control-prev-icon{
+    background-image: url("imagenes/flecha2.png");
+}
+.carousel-control-next-icon{
+    background-image: url("imagenes/flecha1.png");
 
-
-.imagen{
-    float:right;
 }
 .imagen{
     float:right;
@@ -17,9 +19,6 @@
 .d-flex{
     display: contents;
 }
-.footerWeb{
-    padding-bottom: 30px;
-}
 #perfilCarrito{
     margin-top:0;
     margin-bottom:0;
@@ -27,22 +26,47 @@
     word-spacing:10px;
 }
 .btn-primary{
-    --bs-btn-bg: #00ac67;
-    --bs-btn-border-color: #00ac67;
-    --bs-btn-hover-bg: #00ac67;
-    --bs-btn-hover-border-color: #00ac67;
-    --bs-btn-active-bg: #00ac67;
-    --bs-btn-active-border-color: #00ac67;
+    --bs-btn-bg: rgb(47, 93, 98);
+    --bs-btn-border-color: rgb(47, 93, 98);
+    --bs-btn-hover-bg: rgb(47, 93, 98);
+    --bs-btn-hover-border-color: rgb(47, 93, 98);
+    --bs-btn-active-bg: rgb(47, 93, 98);
+    --bs-btn-active-border-color: ;
 }
 
 .precio1{
-    background-color: rgb(189, 236, 255);
+    background-color: rgb(223, 238, 234);
+   
    
 }
 
+
+/* CSS KONY */
+
+#imagenproducto{
+    width: 50%;
+    display: block;
+    align-self: center;
+    margin-top: 25px;
+    
+}
+
+#ListaNosotros {
+    padding-left: inherit;
+    text-align: center;
+}
+
+#fondo{
+    background-color: rgb(223, 238, 234);
+    padding-bottom: 30px;
+}
+
+#cards{
+    height: 100%;
+}
 #descripcionPrecios{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
     align-items: center;
 }
 
