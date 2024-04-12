@@ -16,102 +16,124 @@
 </head>
 
 <body>
-  <!-- NavBar-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <p class="nav-item" style="width: 10px;"></p>
-        <img class="nav-item" src="logoCamping.png" style="width: 5%;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="precios.html">Precios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tienda.html">Tienda</a>
-          </li>
-        </ul>
-        <form id="d-flex" class="d-flex" style="max-width: 1000px;min-width: 500px;" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar arriendo o producto..."
-            aria-label="Buscar arriendo o producto">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
-      
-        <!--Perfil y carrito-->
-        <p id="perfilCarrito" class="nav-item" style="text-align: end;">
+ <!-- NavBar-->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <p class="nav-item" style="width: 10px;"></p>
+      <img class="nav-item" src="logoCamping.png"href="index.html" style="width: 5%;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="precios.html">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tienda.html">Tienda</a>
+        </li>
+      </ul>
+      <form id="d-flex" class="d-flex" style="max-width: 1000px;min-width: 500px;" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar arriendo o producto..."
+          aria-label="Buscar arriendo o producto">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    
+      <!--Perfil y carrito-->
+      <p id="perfilCarrito" class="nav-item" style="text-align: end;">
         <a href="perfil.html">
-          <img class="nav-item" src="imagenes/perfil.png"style="width: 10%;">
+        <img class="nav-item" src="imagenes/perfil.png"style="width: 10%;">
         </a>
         <img class="nav-item" src="imagenes/carrito.png" style="width: 10%;">
-        </p>
-      </div>
+      </p>
     </div>
-  </nav>
+  </div>
+</nav>
   <!--Carrusel-->
 
 
   <!---Sobre nosotros-->
+  <div id="fondo">
   <br></br>
   <h1 style="text-align: center;">Sobre nosotros</h1>
   <br></br>
-  <p style="text-align: center;">Somos un camping que cuenta con más de 20 años de experiencia...</p>
-  <br></br>
+  
+
+
+
+  <p style="text-align: center;">Somos un camping que cuenta con más de 20 años de experiencia.</p>
+  <p style="text-align: center;"> Nos encontramos ubicados al sur de Chile.</p>
+
+  <h4 style="text-align: center;">Ofrecemos:</h4>
+  <ul id="ListaNosotros">
+
+    <li> Baños con servicio de agua caliente </li>
+    <li> Agua potable</li>
+    <li> Electricidad</li>
+    <li> Espacios de recreación para niños </li>
+    <li> Piscina</li>
+  </ul>
 
   <!-- Inicio del Contáctanos-->
   <br>
   <h1 style="text-align: center;">Contáctanos</h1>
+  <br>
   <!--Formulario -->
   <div class="container">
     <form class="row g-3">
   <form class="row g-3 needs-validation was-validated" novalidate="">
     <div class="col-md-4">
       <label for="validationCustom01" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="validationCustom01" value="Mark" required="">
+      <input type="text" class="form-control" id="validationCustom01"  required=""
+      placeholder="Nombre">
       <div class="valid-feedback">
-        Correcto!
+        ¡Correcto!
       </div>
     </div>
     <div class="col-md-4">
       <label for="validationCustom02" class="form-label">Correo</label>
-      <input type="text" class="form-control" id="validationCustom02" value="Otto" required="">
+      <input type="text" class="form-control" id="validationCustom02"  required=""
+      placeholder="Correo electrónico">
       <div class="valid-feedback">
-        Correcto!
+        ¡Correcto!
       </div>
     </div>
     <div class="col-md-4">
       <label for="validationCustomUsername" class="form-label">Dominio</label>
       <div class="input-group has-validation">
         <span class="input-group-text" id="inputGroupPrepend">@</span>
-        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required="">
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required="" 
+        placeholder="Por ejemplo: gmail.com">
         <div class="invalid-feedback">
-          Colocar por ejemplo: gmail.com.
+          Colocar por ejemplo: "gmail.com"
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <label for="validationCustom03" class="form-label">Mensaje</label>
-      <input type="text" class="form-control" id="validationCustom03" required="">
+      <input type="text" class="form-control" id="validationCustom03" required="" placeholder="Deja tu comentario">
       <div class="invalid-feedback">
         Escribe tu mensaje.
       </div>
     </div>
     
     <div class="col-12">
+      <div class="d-flex justify-content-center">
       <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
     </div>
   </form>
 </div>
 </div>
-    <br>
+</div>
+
 <!--Footer-->
 <div class="container text-center" style="background-color: rgba(206, 206, 206, 0.623); max-width: 100%;">
     
