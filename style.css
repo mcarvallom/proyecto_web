@@ -35,7 +35,8 @@
 }
 
 .precio1{
-    background-color: rgb(189, 236, 255);
+    background-color: rgb(223, 238, 234);
+   
    
 }
 
@@ -44,6 +45,8 @@
     margin-right: 25px;
     align-items: center;
 }
+
+/* CSS KONY */
 
 #imagenproducto{
     width: 50%;
@@ -60,9 +63,9 @@
 
 #fondo{
     background-color: rgb(223, 238, 234);
+    padding-bottom: 30px;
 }
 
 #cards{
     height: 100%;
-   
 }
