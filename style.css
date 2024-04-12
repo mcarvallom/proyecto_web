@@ -13,6 +13,7 @@
 
 .d-flex{
     display: contents;
+    min-width: max-content;
 }
 .footerWeb{
     padding-bottom: 30px;
