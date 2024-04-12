@@ -18,6 +18,7 @@
 
 .d-flex{
     display: contents;
+    min-width: max-content;
 }
 #perfilCarrito{
     margin-top:0;
