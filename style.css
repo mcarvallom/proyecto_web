@@ -26,12 +26,12 @@
     word-spacing:10px;
 }
 .btn-primary{
-    --bs-btn-bg: #00ac67;
-    --bs-btn-border-color: #00ac67;
-    --bs-btn-hover-bg: #00ac67;
-    --bs-btn-hover-border-color: #00ac67;
-    --bs-btn-active-bg: #00ac67;
-    --bs-btn-active-border-color: #00ac67;
+    --bs-btn-bg: rgb(47, 93, 98);
+    --bs-btn-border-color: rgb(47, 93, 98);
+    --bs-btn-hover-bg: rgb(47, 93, 98);
+    --bs-btn-hover-border-color: rgb(47, 93, 98);
+    --bs-btn-active-bg: rgb(47, 93, 98);
+    --bs-btn-active-border-color: ;
 }
 
 .precio1{
@@ -47,11 +47,22 @@
 
 #imagenproducto{
     width: 50%;
+    display: block;
     align-self: center;
     margin-top: 25px;
+    
 }
 
 #ListaNosotros {
-
+    padding-left: inherit;
+    text-align: center;
 }
 
+#fondo{
+    background-color: rgb(223, 238, 234);
+}
+
+#cards{
+    height: 100%;
+   
+}
