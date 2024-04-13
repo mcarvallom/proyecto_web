@@ -16,9 +16,12 @@
     --bs-list-group-border-color:  transparent;
 }
 
-.d-flex{
+.buscador{
     display: contents;
     min-width: max-content;
+}
+.testimonios{
+    min-width:min-content
 }
 #perfilCarrito{
     margin-top:0;
@@ -60,7 +63,7 @@
 
 #fondo{
     background-color: rgb(223, 238, 234);
-    padding-bottom: 30px;
+    
 }
 
 #cards{
@@ -117,8 +120,6 @@
     padding-bottom: 60px;
 }
 /*------------------------------------------------*/
-
-
 
 
 
