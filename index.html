@@ -40,7 +40,7 @@
         Subscríbete a nuestro boletín de noticias para mantenerte al tanto de todas nuestras novedades.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Subscribir</button>
+        <button id="subscribeButton" type="button" class="btn btn-primary" data-bs-dismiss="modal">Subscribir</button>
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
       </div>
     </div>
@@ -70,7 +70,7 @@
             <a class="nav-link" href="tienda.html">Tienda</a>
           </li>
         </ul>
-        <form id="d-flex" class="buscador d-flex" style="max-width: 1000px;" role="search">
+        <form id="d-flex" class="d-flex" style="max-width: 1000px; min-width: 500px;" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar arriendo o producto..."
             aria-label="Buscar arriendo o producto">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -255,7 +255,8 @@
           <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com" aria-describedby="emailHelp">
         </div>
-        <button type="submit" class="btn btn-primary">Suscribir</button>
+        
+        <button id="subscribeButton" type="button" class="btn btn-primary">Subscribir</button>
       </form>
 
     </div>

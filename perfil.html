@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilosbootstrap.scss">
     <link rel="stylesheet" href="scss/_variables.scss">
+    <link rel="stylesheet" href="nikole.css">
 </head>
 <body>
 
@@ -38,7 +39,7 @@
             <a class="nav-link" href="tienda.html">Tienda</a>
           </li>
         </ul>
-        <form id="d-flex" class="d-flex" style="max-width: 1000px;" role="search">
+        <form id="d-flex" class="d-flex" style="max-width: 1000px; min-width: 500px;" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar arriendo o producto..."
             aria-label="Buscar arriendo o producto">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -55,29 +56,46 @@
     </div>
   </nav>
 <!-- Detalle cuenta-->
-      <div class="imagenPerfil">
-        <p style="text-align: center;">
-        <img src="imagenPerfil/perfil1.png" alt="Foto de perfil" width="15%" >
-      </p>
-        <h3 style="text-align: center;">Fulanito Perez</h3>
-        <br>
-        <h4 style="text-align: center;">fulanito.perez@gmail.com</h4>
-        <br>
-        <h4 style="text-align: center;">+56991835646</h4>
-      </div>
+<div class="imagenPerfil">
 
-      <br>
-        <div class="col-12 m-auto text-center">
-            <button type="button" class="btn btn-primary">Editar perfil</button>
-        </div>
-        <br>
-        <br>
-        <div class="col-12 m-auto text-center">
-            <button type="button" class="btn btn-primary">Cerrar sesión</button>
-        </div>
-        <br>
-        <br>
-        <br>
+
+  <div class="col align-self-center container text-center imagenPerfill" id="gallery"></div>
+  <script src="nikole.js"></script>
+
+
+
+
+</div>
+  <h3 id="nombreUsuario" style="text-align: center;">Fulanito Perez</h3>
+  <br>
+  <h4 id="correoUsuario" style="text-align: center;">fulanito.perez@gmail.com</h4>
+  <br>
+  <h4 id="celularUsuario" style="text-align: center;">+56991835646</h4>
+</div>
+
+<script>
+  document.getElementById('nombreUsuario').textContent = localStorage.getItem('nombreUsuario') || 'Fulanito Perez';
+  document.getElementById('correoUsuario').textContent = localStorage.getItem('correoUsuario') || 'fulanito.perez@gmail.com';
+  document.getElementById('celularUsuario').textContent = localStorage.getItem('celularUsuario') || '+56991835646';
+</script>
+
+<br>
+  <div class="col-12 m-auto text-center">
+
+    <a href="editarPerfil.html">
+      <button type="button" class="btn btn-primary">Editar perfil</button>
+    </a> 
+  </div>
+  <br>
+  <br>
+  <div class="col-12 m-auto text-center">
+    <a href="cierresesion.html">
+      <button type="button" class="btn btn-primary">Cerrar sesión</button>
+    </a> 
+  </div>
+  <br>
+  <br>
+  <br>
 
 
 <!--Footer-->

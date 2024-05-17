@@ -16,4 +16,20 @@
       title: '' 
     });
   }
-  
+  // script.js
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const button = document.getElementById('subscribeButton');
+  const buttonText = localStorage.getItem('buttonText') || 'Subscribir';
+  button.textContent = buttonText;
+
+  button.addEventListener('click', () => {
+      if (button.textContent === 'Subscribir') {
+          button.textContent = 'Darse de baja';
+      } else {
+          button.textContent = 'Subscribir';
+      }
+      localStorage.setItem('buttonText', button.textContent);
+  });
+});
+
