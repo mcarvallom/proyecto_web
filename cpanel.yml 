@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/marquito/duoc.appsmarc.site/
-    - /bin/cp -R duoc.appsmarc.site $DEPLOYPATH
