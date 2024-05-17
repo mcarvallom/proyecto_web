@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilosbootstrap.scss">
     <link rel="stylesheet" href="scss/_variables.scss">
+    <link rel="stylesheet" href="nikole.css">
 </head>
 <body>
   <!-- NavBar-->
@@ -37,7 +38,7 @@
             <a class="nav-link" href="tienda.html">Tienda</a>
           </li>
         </ul>
-        <form id="d-flex" class="d-flex" style="max-width: 1000px;" role="search">
+        <form id="d-flex" class="d-flex" style="max-width: 1000px; min-width: 500px;" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar arriendo o producto..."
             aria-label="Buscar arriendo o producto">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -110,10 +111,81 @@
                 <div class="col-4">
                     <img src="imagenesPrecios/precios1.webp" alt="precio 1" width="100%">
                 </div>
-           
           </div>
-          
     </div>
+
+ <!--Formulario de arriendo-->
+    <div class="precio2" style="height: 20%; background-color: rgb(167, 196, 188);">
+      <div class="d-flex">
+          <div id="descripcionPrecios" class="row">
+            <br>
+            <br>
+            <h4 style="text-align: center;">Formulario de arriendo</h4>
+            <br>
+            <form id="formArriendo" class="row g-3">
+              <div class="col-12">
+                <label for="inputName" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                <span id="mensajeNom"></span>
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="@gmail.com">
+                <span id="mensajeCorreo"></span>
+              </div>
+              <div class="col-md-6">
+                <label for="inputCelular" class="form-label">Celular</label>
+                <input type="number" class="form-control" id="inputCelular">
+                <span id="mensajeCelu"></span>
+              </div>
+              <div class="col-md-6">
+                <label for="inputCarpaHastaCuatro" class="form-label">Cantidad de carpas hasta 4 personas</label>
+                <input type="number" class="form-control" id="inputCarpaHastaCuatro" min="0" max="10">
+                <span id="mensajehastaCuatro"></span>
+              </div>
+              <div class="col-md-6">
+                <label for="inputSobreCuatro" class="form-label"> Cantidad de carpas superior a 4 personas</label>
+                <input type="number" class="form-control" id="inputSobreCuatro" min="0" max="10">
+                <span id="mensajesobreCuatro"></span>
+              </div>
+
+              <div class="col-6">
+                <div class="d-flex justify-content-center">
+                  <button onclick="validar_arriendo()" type="button" class="btn btn-primary">Arrendar</button>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="d-flex justify-content-center">
+                  <button onclick="limpiar_formulario()"  type="button" class="btn btn-primary">Limpiar</button>
+                </div>
+              </div>
+            </form>
+
+            <div>
+              <h3>Resumen del Arriendo</h3>
+              <p>Nombre: </p>
+              <p id="nombreResp"></p>
+              <br>
+              <p>Correo:</p>
+              <p id="emailResp"></p>
+              <br>
+              <p>Celular:</p>
+              <p id="celularResp"></p>
+              <br>
+              <p>Cantidad de carpas de hasta cuatro personas:</p>
+              <p id="hastaCuatroResp"></p>
+              <br>
+              <p>Cantidad de carpas sobre cuatro personas:</p>
+              <p id="sobreCuatroResp"></p>
+          </div>
+
+
+          </div>
+      </div>
+    </div>
+
+    
+    
     
  <!--Footer-->
  <div class="container text-center" style="background-color: rgba(206, 206, 206, 0.623); max-width: 100%;">
@@ -155,7 +227,7 @@
         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com" aria-describedby="emailHelp">
       </div>
-      <button type="submit" class="btn btn-primary">Suscribir</button>
+      <button type="submit" class="btn btn-primary" >Suscribir</button>
     </form>
 <br></br>
   </div>
@@ -163,6 +235,8 @@
 
 </div>
     
+<script src="nikole.js"></script>
+
 </body>
 </html>
 
