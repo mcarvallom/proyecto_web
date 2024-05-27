@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilosbootstrap.scss">
     <link rel="stylesheet" href="scss/_variables.scss">
+    <link rel="stylesheet" href="nikole.css">
 </head>
-
 <body>
-<!-- NavBar-->
+
+  <!-- NavBar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -24,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <p class="nav-item" style="width: 10px;"></p>
-        <img class="nav-item" src="logoCamping.png" style="width: 5%;">
+        <img class="nav-item" src="logoCamping.png"href="index.html" style="width: 5%;">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
@@ -38,7 +39,7 @@
             <a class="nav-link" href="tienda.html">Tienda</a>
           </li>
         </ul>
-        <form id="d-flex" class="d-flex" style="max-width: 1000px;min-width: 500px;" role="search">
+        <form id="d-flex" class="d-flex" style="max-width: 1000px; min-width: 500px;" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar arriendo o producto..."
             aria-label="Buscar arriendo o producto">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -46,79 +47,104 @@
       
         <!--Perfil y carrito-->
         <p id="perfilCarrito" class="nav-item" style="text-align: end;">
-        <a href="perfil.html" >
+          <a href="perfil.html">
           <img class="nav-item" src="imagenes/perfil.png"style="width: 10%;">
-        </a>
-        <img class="nav-item" src="imagenes/carrito.png" style="width: 10%;">
+          </a>
+          <img class="nav-item" src="imagenes/carrito.png" style="width: 10%;">
         </p>
       </div>
     </div>
   </nav>
 <!-- Detalle cuenta-->
-      <div class="imagenPerfil">
-        <p style="text-align: center;">
-        <img src="imagenPerfil/perfil1.png" alt="Foto de perfil" width="15%" >
-      </p>
-        <h3 style="text-align: center;">Fulanito Perez</h3>
-        <br>
-        <h4 style="text-align: center;">fulanito.perez@gmail.com</h4>
-        <br>
-        <h4 style="text-align: center;">+56991835646</h4>
-      </div>
+<div class="imagenPerfil">
 
-        <br>
-        <div class="col-12 m-auto text-center">
-            <button type="button" class="btn btn-primary">Editar perfil</button>
-        </div>
-        <br>
-        <br>
-        <div class="col-12 m-auto text-center">
-            <button type="button" class="btn btn-primary">Cerrar sesión</button>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="container text-center" style="background-color: rgba(206, 206, 206, 0.623); max-width: 100%;">
+
+  <div class="col align-self-center container text-center imagenPerfill" id="gallery"></div>
+  <script src="nikole.js"></script>
+
+
+
+
+</div>
+  <h3 id="nombreUsuario" style="text-align: center;">Fulanito Perez</h3>
+  <br>
+  <h4 id="correoUsuario" style="text-align: center;">fulanito.perez@gmail.com</h4>
+  <br>
+  <h4 id="celularUsuario" style="text-align: center;">+56991835646</h4>
+</div>
+
+<script>
+  document.getElementById('nombreUsuario').textContent = localStorage.getItem('nombreUsuario') || 'Fulanito Perez';
+  document.getElementById('correoUsuario').textContent = localStorage.getItem('correoUsuario') || 'fulanito.perez@gmail.com';
+  document.getElementById('celularUsuario').textContent = localStorage.getItem('celularUsuario') || '+56991835646';
+</script>
+
+<br>
+  <div class="col-12 m-auto text-center">
+
+    <a href="editarPerfil.html">
+      <button type="button" class="btn btn-primary">Editar perfil</button>
+    </a> 
+  </div>
+  <br>
+  <br>
+  <div class="col-12 m-auto text-center">
+    <a href="cierresesion.html">
+      <button type="button" class="btn btn-primary">Cerrar sesión</button>
+    </a> 
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+<!--Footer-->
+<div class="container text-center" style="background-color: rgba(206, 206, 206, 0.623); max-width: 100%;">
     
-          <div class="row d-flex p-2">
-                <div class="col">
-                      <br></br>
-                      <img src="logoCamping.png" style="width: 40%;">
-                </div>
-                <div class="col">
-                  <br></br>
-                  <h4>Enlaces</h4>
-                  <ul id="enlacesBottom" class="list-group">
-                    <li class="list-group-item ">Inicio</li>
-                    <li class="list-group-item">Sobre nosotros</li>
-                    <li class="list-group-item">Precios</li>
-                    <li class="list-group-item">Tienda</li>
-                    <li class="list-group-item">Mi perfil</li>
-                  </ul>
-                </div>
-                <div class="col">
-                   <br></br>
-                   <h4>Redes sociales</h4>
-                </div>
-                <div class="col">
-                  <br></br>
-                  <h4>Contacto</h4>
-                </div>
-                <div class="col">
-                <br></br>
-                <h4>Suscríbete</h4>
-          
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com" aria-describedby="emailHelp">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Suscribir</button>
-                </form>
-          
-          
-              </div>
-          </div>
+  <div class="footerWeb row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-md-5 g-3">
+    <div class="col">
+      <br></br>
+      <img src="logoCamping.png" style="width: 40%;">
+    </div>
+    <div class="col">
+      <br></br>
+      <h4>Enlaces</h4>
+      <ol id="enlacesBottom" class="list-group">
+        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        
+        <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+        <a class="nav-link" href="precios.html">Precios</a>
+        <a class="nav-link" href="tienda.html">Tienda</a>
+        <a class="nav-link" href="perfil.html"> Mi perfil </a>
+      </ol>
+    </div>
+    <div class="col">
+       <br></br>
+       <h4>Redes sociales</h4>
+       <img src="imagenes/redesSociales.png" width="30%" />
+    </div>
+    <div class="col">
+      <br></br>
+      <h4>Contacto</h4>
+      <br>
+      <p>Contáctanos al correo example@dominio.com</p>
+    </br>
+    </div>
+    <div class="col">
+    <br></br>
+    <h4>Suscríbete</h4>
+
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com" aria-describedby="emailHelp">
+      </div>
+      <button type="submit" class="btn btn-primary">Suscribir</button>
+    </form>
+
+  </div>
+</div>
+</div>
       
     
 </body>
